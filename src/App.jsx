@@ -1,5 +1,8 @@
 import './App.css';
 
+//FUNÇÕES
+
+
 //DECLARADAS Ou NOMEADAS
 console.log('saudacao: ', saudacao('Bora Bill')); // Saída: Olá, mundo!
 
@@ -8,6 +11,7 @@ function saudacao(nome) {
 }
 
 //EXPRESSAS
+
 //oiMundo(); //Uncaught ReferenceError: Cannot access 'oiMundo' before initialization"
 
 const oiMundo = function() {
@@ -19,8 +23,10 @@ const oiMundo = function() {
 //Declarada
 function add(x, y) {  return x + y;}
 console.log("Declarada: ", add(2,2)); //4
+
 //Anonima
 console.log("Anonima: ", [2, 2].reduce(function (x, y) { return x + y; })); //4
+
 //Arrow 
 let myAdd = (x, y) => x + y;
 console.log("Arrow: ", myAdd(2,2)); //4
